@@ -58,3 +58,19 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
+.middle {
+    display: flex;
+}
+
+.middleleft {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.middleleft h2 {
+    margin-top: 32px;
+    margin-bottom: 0;
+}

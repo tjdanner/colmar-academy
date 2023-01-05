@@ -145,3 +145,56 @@ nav a {
 .startlearning div div > * {
     margin: 8px 0 8px 0;
 }
+
+#thesisheader {
+    width: 100%;
+    text-align: center;
+    padding: 32px 0 0 0;
+    margin: 0;
+}
+
+.thesis{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 32px;
+}
+
+.thesisleft {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 32px 24px 0 24px;
+}
+
+.thesisleft h3 {
+    margin: 24px 0 8px 0;
+}
+
+.thesisleft p {
+    margin: 0;
+}
+
+
+.thesisright {
+    padding: 32px 0 32px 24px;
+}
+
+.thesisbox {
+    display: flex;
+    align-items: center;
+}
+
+.thesisbox img {
+    height: auto;
+    width: 35%;
+    padding: 16px;
+}
+
+.thesisbox div {
+    width: 65%;
+}
+
+.thesisbox:nth-child(1) {
+    background-color: lightgrey;
+}
+

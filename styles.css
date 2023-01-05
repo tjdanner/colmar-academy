@@ -61,16 +61,45 @@ nav a {
 
 .middle {
     display: flex;
+    justify-content: left;
+    margin-bottom: 32px;
 }
 
 .middleleft {
     display: flex;
     flex-direction: column;
     width: 60%;
-    padding: 32px 24px;
+    padding: 32px 24px 0 24px;
 }
 
 .middleleft h2 {
     margin-top: 32px;
     margin-bottom: 0;
+}
+
+.middleright {
+    width: 40%;
+    padding-top: 16px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.middlerightbox {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+}
+
+.middlerightbox img {
+    height: auto;
+    width: 35%;
+    padding: 16px;
+}
+
+.middlerightbox h3, .middlerightbox p, .middleright a {
+    margin: 8px;
+}
+
+.middlerightbox:nth-child(3) {
+    background-color: lightgray;
 }

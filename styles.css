@@ -33,3 +33,28 @@ nav a {
     color: black;
     padding: 8px;
 }
+
+.banner {
+    display: flex;
+    background-color: lightgrey;
+    align-items: center;
+}
+
+.banner img {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.banner button {
+    width: 80%;
+    height: 32px;
+    background-color: darkslategrey;
+    border: none;
+    cursor: pointer;
+}
+
+.banner button a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}

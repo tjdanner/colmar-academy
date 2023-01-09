@@ -10,6 +10,7 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
+    border-bottom: 1px solid lightgrey;
 }
 
 .logo {
@@ -21,6 +22,7 @@ header {
 }
 
 .logo img{
+    padding: 0;
     height: 100%;
 }
 
@@ -37,6 +39,11 @@ nav a {
     padding: 8px;
 }
 
+header a {
+    display: flex;
+    height: 75%;
+}
+
 .banner {
     display: flex;
     background-color: lightgrey;
@@ -50,7 +57,7 @@ nav a {
 
 .banner button {
     width: 80%;
-    height: 32px;
+    height: 48px;
     background-color: darkslategrey;
     border: none;
     cursor: pointer;
@@ -60,6 +67,7 @@ nav a {
     padding: 8px;
     text-decoration: none;
     color: white;
+    font-size: 1.25em;
 }
 
 .middle {
@@ -93,14 +101,23 @@ nav a {
     border: 1px solid lightgray;
 }
 
-.middlerightbox img {
+.middlerightbox img:nth-of-type(1) {
     height: auto;
     width: 35%;
     padding: 16px;
 }
 
+.middlerightbox img:nth-of-type(2) {
+    width: 100%;
+}
+
 .middlerightbox h3, .middlerightbox p, .middleright a {
     margin: 8px;
+}
+
+.middlerightbox a {
+    text-decoration: none;
+    color: dodgerblue;
 }
 
 .middlerightbox:nth-child(3) {
@@ -216,4 +233,168 @@ footer p{
 
 footer div p {
     margin-left: 8px;
+}
+
+@media (max-width: 730px) {
+    header, .logo{
+        margin: 0;
+    }
+    header nav, header p{
+        display: none;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner div {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner div h1{
+        font-size: 2.5em;
+    }
+
+    .banner div h3{
+        font-size: 2em;
+    }
+
+    .banner div button {
+        width: 100%;
+        background-color: grey;
+    }
+
+    .banner div > * {
+        margin: 16px 0;
+    }
+
+    .middleleft {
+        display: none;
+    }
+
+    .middle {
+        justify-content: center;
+    }
+
+    .middleright {
+        width: 100%;
+        padding-top: 0;
+        border: none;
+    }
+
+    .middlerightbox {
+        flex-direction: column;
+        padding: 16px;
+        border: none;
+    }
+
+    .middlerightbox img:nth-of-type(1){
+        display: none;
+    }
+
+    .middlerightbox div {
+        padding: 0 16px;
+        align-self: start;
+    }
+
+    .middlerightbox div h3 {
+        font-size: 2em;
+    }
+
+    .middlerightbox div p {
+        font-size: 1.5em;
+    }
+
+    .middlerightbox div a {
+        font-size: 1.5em;
+    }
+
+    .middlerightbox:nth-of-type(3){
+        background-color: inherit;
+    }
+
+    #startlearningheader {
+        background-color: white;
+        padding: 32px 0;
+        border-top: 1px solid lightgrey;
+        font-size: 2.5em;
+    }
+
+    .startlearning {
+        background-color: inherit;
+        padding: 0 0 32px;
+        border-bottom: 1px solid lightgrey;
+        
+    }
+
+    .startlearning div {
+        background-color: lightgrey;
+        width: 100%;
+    }
+
+    .startlearning img, p {
+        display: none;
+    }
+
+    .startlearning div h3 {
+        font-size: 2em;
+    }
+
+    .startlearning div div {
+        margin: 16px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .thesisright {
+        display: none;
+    }
+
+    .thesis {
+        justify-content: center;
+    }
+
+    .thesisleft {
+        width: 100%;
+    }
+
+    .thesisleft h3 {
+        display: none;
+    }
+
+    #footer2 {
+        display: block;
+    }
+
+    footer {
+        display: block;
+    }
+
+}
+
+@media (min-width: 730px) {
+    .navlogo{
+        display: none;
+    }
+
+    .middlerightbox img:nth-of-type(2){
+        display: none;
+    }
+
+    #footer2 {
+        display: none;
+    }
 }

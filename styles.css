@@ -1,5 +1,9 @@
-html{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0 10vw;
 }
 
 header {
@@ -21,7 +25,7 @@ header {
     margin-left: 24px;
 }
 
-.logo img{
+.logo img {
     padding: 0;
     height: 100%;
 }
@@ -111,7 +115,9 @@ header a {
     width: 100%;
 }
 
-.middlerightbox h3, .middlerightbox p, .middleright a {
+.middlerightbox h3,
+.middlerightbox p,
+.middleright a {
     margin: 8px;
 }
 
@@ -140,7 +146,7 @@ header a {
     padding: 32px 0;
 }
 
-.startlearning div{
+.startlearning div {
     background-color: white;
     width: 300px;
     margin: 8px 8px;
@@ -159,7 +165,7 @@ header a {
     margin: 16px 32px 24px 16px;
 }
 
-.startlearning div div > * {
+.startlearning div div>* {
     margin: 8px 0 8px 0;
 }
 
@@ -170,7 +176,7 @@ header a {
     margin: 0;
 }
 
-.thesis{
+.thesis {
     display: flex;
     justify-content: left;
     margin-bottom: 32px;
@@ -223,11 +229,11 @@ footer {
     margin-bottom: 32px;
 }
 
-footer div{
+footer div {
     display: flex;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
 
@@ -236,10 +242,18 @@ footer div p {
 }
 
 @media (max-width: 730px) {
-    header, .logo{
+
+    body{
+        margin: auto;
+    }
+
+    header,
+    .logo {
         margin: 0;
     }
-    header nav, header p{
+
+    header nav,
+    header p {
         display: none;
     }
 
@@ -262,11 +276,11 @@ footer div p {
         flex-direction: column;
     }
 
-    .banner div h1{
+    .banner div h1 {
         font-size: 2.5em;
     }
 
-    .banner div h3{
+    .banner div h3 {
         font-size: 2em;
     }
 
@@ -275,7 +289,7 @@ footer div p {
         background-color: grey;
     }
 
-    .banner div > * {
+    .banner div>* {
         margin: 16px 0;
     }
 
@@ -299,7 +313,7 @@ footer div p {
         border: none;
     }
 
-    .middlerightbox img:nth-of-type(1){
+    .middlerightbox img:nth-of-type(1) {
         display: none;
     }
 
@@ -320,7 +334,7 @@ footer div p {
         font-size: 1.5em;
     }
 
-    .middlerightbox:nth-of-type(3){
+    .middlerightbox:nth-of-type(3) {
         background-color: inherit;
     }
 
@@ -335,7 +349,7 @@ footer div p {
         background-color: inherit;
         padding: 0 0 32px;
         border-bottom: 1px solid lightgrey;
-        
+
     }
 
     .startlearning div {
@@ -343,7 +357,8 @@ footer div p {
         width: 100%;
     }
 
-    .startlearning img, p {
+    .startlearning img,
+    p {
         display: none;
     }
 
@@ -386,11 +401,11 @@ footer div p {
 }
 
 @media (min-width: 730px) {
-    .navlogo{
+    .navlogo {
         display: none;
     }
 
-    .middlerightbox img:nth-of-type(2){
+    .middlerightbox img:nth-of-type(2) {
         display: none;
     }
 
